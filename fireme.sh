@@ -81,7 +81,7 @@ make_dirs(){
 make_files(){
 	
 	cp ./resolvers.txt $path/dns/resolvers.txt
-	cp -u $(locate providers.json) . ## Needed for SubOver
+	#cp -u $(locate providers.json) . ## Needed for SubOver
 
 }
 

@@ -37,6 +37,15 @@ This tool help you getting started into bugbounty sinse i used it to do so.
 > PS: This tools is not advised for targets that have move than 1K subdomains.
 > It can take alot of time.
 
+## Working proccess:
+1. Scan for live domains.
+2. Gets all the links and generate intresing ones.
+3. Generates wordlists based on the result of the links.
+4. Checks for probably vulnerable inputs.
+5. Checks for subdomains takeover.
+6. Uses massdns for dumping IPs.
+7. nmap live domains.
+
 ## Recommendation:
 Use this tool in combination with [projectdiscovery chaos](https://chaos.projectdiscovery.io/#/) tool to gain sometime and skip the subdomains enumeration which can take a really long time for big targets.
 
@@ -56,12 +65,17 @@ Use this tool in combination with [projectdiscovery chaos](https://chaos.project
 | massdns | [blechschmidt](https://github.com/blechschmidt/) | [https://github.com/blechschmidt/massdns](https://github.com/blechschmidt/massdns) |
 
 ## Installation & Requirements:
+> Requires GO to be installed and specified in the PATH
 ```console
 $ git clone https://github.com/soufian2017/FireMe
 $ cd FireMe
 $ chmod u+x install.sh
 $ ./install.sh
 ```
+
+## Preview:
+
+![URL](img/urls.png)
 
 ## Thanks to:
 - [Tomnomnom](https://github.com/tomnomnom) ![Twitter Follow](https://img.shields.io/twitter/follow/tomnomnom?label=Follow&style=social)
