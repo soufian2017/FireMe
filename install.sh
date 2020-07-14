@@ -3,6 +3,8 @@ go get github.com/tomnomnom/waybackurls
 GO111MODULE=on go get -u -v github.com/lc/gau
 go get -u github.com/tomnomnom/unfurl
 go get -u github.com/tomnomnom/gf
+echo 'source $GOPATH/src/github.com/tomnomnom/gf/gf-completion.bash' >> ~/.bashrc
+cp -r $GOPATH/src/github.com/tomnomnom/gf/examples ~/.gf
 go get github.com/haccer/subjack
 git clone https://github.com/m4ll0k/takeover.git
 cd takeover
